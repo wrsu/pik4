@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+
+	# Picture Files
+	RewriteRule ^t([0-9a-zA-Z\-\_]+).jpg$		/thumb/$1
+	RewriteRule ^i([0-9a-zA-Z\-\_]+).jpg$		/image/$1
+	RewriteRule ^f([0-9a-zA-Z\-\_]+).jpg$		/full/$1
+	RewriteRule (thumb|image|full)/([0-9a-zA-Z\-\_])([0-9a-zA-Z\-\_])([0-9a-zA-Z\-\_])([0-9a-zA-Z\-\_])([0-9a-zA-Z\-\_]+) /$1/$2/$3/$4/$5/$6.jpg [L]
+
+	# Do Not Redirect The Files
+	RewriteCond 	%{REQUEST_FILENAME} 		-f
+	RewriteRule 	.* 							- 								[L]
+
+	# Else - to index
+	RewriteRule		^h([a-zA-Z0-9\-\_]+)$		/index.php?id=$1				[L,QSA]
+	RewriteRule		^h(0|)$						/index.php						[L,QSA]
+
+</IfModule>

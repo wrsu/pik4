@@ -1,0 +1,95 @@
+body {
+	font: normal 12px Verdana, Tahoma, sans-serif; padding: 0 0 10px 0; margin: 0;
+	background: #000 url('bg.jpg') center top no-repeat; color: #fff;
+}
+a, a:visited { color: #f1f1f1; text-decoration: underline; }
+a:hover { color: #fff; }
+acronym { border-bottom-style: dotted; border-bottom-width: 1px; }
+
+#container { display: block; width: 700px; margin: 20px auto 0 auto; }
+
+#header {
+	display: block; height: 90px; cursor: pointer;
+	background: url('logo.png') center top no-repeat;
+}
+#header h1, #header p { display: none; }
+
+#theform { padding: 10px 0 40px 0; text-align: center; background: url('upload.png') bottom left no-repeat; }
+#thedescr { width: 600px; font-size: 11px; margin: 4px auto; text-align: left; }
+
+#thefile {
+	width: 610px; margin: 5px auto; padding: 3px;
+	border: solid 1px #aaa; border-radius: 5px;
+	background: #fff url('field.png') top left repeat-x;
+}
+
+#thefile input {
+	width: 610px; font-size: 16px; padding: 2px; margin: 0;
+	background: transparent; color: #111; text-align: center;
+	border: solid 0px #fff; border-radius: 5px;
+}
+
+#loader {
+	display: none; width: 300px; height: 35px; margin: 5px auto;
+	background: url('loader.gif') center center no-repeat;
+}
+
+#thelink {	display: block; margin: 6px auto; font-size: 22px; text-align: center;
+} #thelink a { color: #fff; text-decoration: none; }
+
+#thelike {	display: block; padding: 0 0 27px 35px; margin-left: 50px;	background: url('like.png') bottom left no-repeat;
+}
+
+#theinfo, #themore {
+	display: block; margin: 6px auto; font-size: 12px; text-align: center;
+}
+#themore span {  font-size: 14px; font-weight: bold; }
+
+#theimage { text-align: center; background: url('image.png') top center no-repeat; padding-top: 15px; }
+#theimage img { margin: 15px auto; padding: 5px; border: solid 1px #ccc; background: #fff; border-radius: 4px; }
+
+#thefieldlist { display: none; }
+#thefields {
+	display: block; margin: 15px 35px 15px 0; padding: 35px 45px 0 0;
+	background: url('links.png') right top no-repeat;
+}
+#thefields label { display: block; text-align: right; padding: 4px; }
+#thefields input {
+	font-size: 14px; padding: 4px 10px; margin: 0 5px; width: 350px;
+	background: #eee url('button.png') top left repeat-x; color: #111;
+	border: solid 1px #aaa; border-radius: 3px;
+}
+
+#thedata { margin: 10px 0; display: none; }
+.theline { padding: 3px; margin: 0 auto; font-size: 11px; }
+.thetitle { display: inline-block; width: 300px; text-align: right; font-weight: bold; }
+.thetitle:after { content: ": "; }
+
+#thetable { padding: 5px 0; }
+table.files { border: solid 1px #ccc; width: 95%; margin: 0 auto; padding: 1px 0 0 0; }
+table.files th { text-align: center; background: #444; padding: 4px; margin: 0 1px 1px 1px; }
+table.files td { background: #111; padding: 4px; margin: 0 1px 1px 1px; }
+table.files td.row2 { background: #222; padding: 4px; margin: 0 1px 1px 1px; }
+
+.error-message {	display: block; padding: 10px 15px;background: #fee;
+	color: #722; border: solid 1px #722; border-radius: 5px;
+}
+
+#discuss {
+	background: url('discuss.png') top left no-repeat; padding: 35px 0 0 0;
+}
+#discuss-block {
+	width: 570px; padding: 6px; margin: 10px auto;
+	background: #fff; border: solid 1px #ccc; border-radius: 5px;
+}
+
+#dev { padding: 10px 0 5px 0; font-size: 11px; color: #efefef; }
+p { padding: 0 0 4px 0; text-align: justify; }
+
+#footer { font-size: 10px; padding: 10px 0 0 0; color: #ccc; }
+#social {
+	display: block; width: 500px; padding: 0 0 6px 0; margin: 0 auto;
+	text-align: center; background: url('share.png') bottom right no-repeat;
+}
+#counter { float: right; }
+#copyright { padding: 2px 0; }
